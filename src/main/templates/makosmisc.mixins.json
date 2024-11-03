@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.makozort.makosmisc.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BeaconMixin"
+  ],
+  "client": [
+    "ArmourMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

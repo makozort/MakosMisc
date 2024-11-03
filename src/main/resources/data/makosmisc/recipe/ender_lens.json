@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EAE",
+    "AGA",
+    "EAE"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:end_stone"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "G": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "result": {
+    "id": "makosmisc:ender_lens"
+  }
+}

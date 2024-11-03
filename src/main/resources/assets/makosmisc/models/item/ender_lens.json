@@ -1,0 +1,6 @@
+{
+  "parent": "makosmisc:block/ender_lens",
+  "textures": {
+    "all": "makosmisc:block/ender_lens"
+  }
+}

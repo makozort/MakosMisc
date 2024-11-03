@@ -1,0 +1,8 @@
+{
+  "effect.makosmisc.flight_effect": "Flight",
+
+  "enchantment.makosmisc.dash": "Dash",
+  "enchantment.makosmisc.hidden": "Dash",
+  "tooltip.makosmisc.flight": "§oPlace atop a beacon to soar!§r",
+  "block.makosmisc.ender_lens": "Ender Flight Lens"
+}
