@@ -7,12 +7,12 @@
     "makosmisc:dash_component": {}
   },
   "max_cost": {
-    "base": 25,
-    "per_level_above_first": 8
+    "base": 30,
+    "per_level_above_first": 30
   },
   "max_level": 1,
   "min_cost": {
-    "base": 5,
+    "base": 30,
     "per_level_above_first": 8
   },
   "primary_items": "#minecraft:enchantable/foot_armor",
@@ -20,5 +20,5 @@
     "feet"
   ],
   "supported_items": "#minecraft:enchantable/armor",
-  "weight": 5
+  "weight": 4
 }

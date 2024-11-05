@@ -2,7 +2,9 @@
   "effect.makosmisc.flight_effect": "Flight",
 
   "enchantment.makosmisc.dash": "Dash",
-  "enchantment.makosmisc.hidden": "Dash",
+  "enchantment.makosmisc.hidden": "Hidden",
   "tooltip.makosmisc.flight": "§oPlace atop a beacon to soar!§r",
-  "block.makosmisc.ender_lens": "Ender Flight Lens"
+  "block.makosmisc.ender_lens": "Ender Flight Lens",
+  "sounds.makosmisc.dash": "Dash",
+  "creativetab.makosmisc.main": "Mako's Miscellaneous"
 }

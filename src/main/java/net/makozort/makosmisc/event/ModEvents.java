@@ -21,7 +21,7 @@ public class ModEvents {
 
     @SubscribeEvent
     public void onFall(LivingFallEvent event) {
-        if (event.getEntity() instanceof Player player && !DashHandler.getPlayerDash(player)) {
+        if (event.getEntity() instanceof Player player && !DashHandler.getPlayerDash(player) && event.getDistance() <= 35) {
             event.setCanceled(true);
         }
     }

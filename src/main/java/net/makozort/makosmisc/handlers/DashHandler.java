@@ -2,6 +2,7 @@ package net.makozort.makosmisc.handlers;
 
 import net.makozort.makosmisc.networking.payloads.DashPayload;
 import net.makozort.makosmisc.reg.AllEffectDataComponentTypes;
+import net.makozort.makosmisc.reg.AllSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -48,13 +49,14 @@ public class DashHandler {
     }
 
     private static void dash(Player player) {
-        player.level().playSound(null, player.getOnPos(), SoundEvents.NOTE_BLOCK_CHIME.value(), SoundSource.MASTER, 1, 1F);
+        player.level().playSound(null, player.getOnPos(), AllSounds.DASH.get(), SoundSource.MASTER, 1, 1F);
         Vec3 currentVelocity = player.getDeltaMovement();
         player.hurtMarked = true;
         Vec3 lookVector = player.getLookAngle();
         Vec3 dashVelocity = lookVector.scale(.8);
         Vec3 newVelocity = currentVelocity.add(dashVelocity);
         player.setDeltaMovement(newVelocity);
+        player.resetFallDistance();
     }
 
 

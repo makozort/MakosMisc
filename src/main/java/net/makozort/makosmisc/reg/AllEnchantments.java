@@ -18,15 +18,15 @@ public class AllEnchantments {
             ResourceLocation.fromNamespaceAndPath(MakosMisc.MODID, "hidden"));
 
     public static void bootstrap(BootstrapContext<Enchantment> context) {
-        var echantment = context.lookup(Registries.ENCHANTMENT);
+        var enchantment = context.lookup(Registries.ENCHANTMENT);
         var items = context.lookup(Registries.ITEM);
 
         reg(context, DASH, Enchantment.enchantment(Enchantment.definition(items.getOrThrow(ItemTags.ARMOR_ENCHANTABLE),
-                items.getOrThrow(ItemTags.FOOT_ARMOR_ENCHANTABLE), 5,1,Enchantment.dynamicCost(5,8),
-                Enchantment.dynamicCost(25,8),3,EquipmentSlotGroup.FEET)).withEffect(AllEffectDataComponentTypes.DASH.get()));
+                items.getOrThrow(ItemTags.FOOT_ARMOR_ENCHANTABLE), 4,1,Enchantment.dynamicCost(30,8),
+                Enchantment.dynamicCost(30,30),3,EquipmentSlotGroup.FEET)).withEffect(AllEffectDataComponentTypes.DASH.get()));
 
         reg(context, HIDDEN , Enchantment.enchantment(Enchantment.definition(items.getOrThrow(ItemTags.ARMOR_ENCHANTABLE),
-                items.getOrThrow(ItemTags.ARMOR_ENCHANTABLE), 8,1,Enchantment.dynamicCost(5,8),
+                items.getOrThrow(ItemTags.ARMOR_ENCHANTABLE), 10,1,Enchantment.dynamicCost(5,8),
                 Enchantment.dynamicCost(25,8),3,EquipmentSlotGroup.ARMOR)).withEffect(AllEffectDataComponentTypes.HIDDEN.get()));
     }
 
