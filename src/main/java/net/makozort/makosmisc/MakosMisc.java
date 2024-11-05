@@ -4,10 +4,7 @@ import net.makozort.makosmisc.content.enchantment.ModEnchantmentEffects;
 import net.makozort.makosmisc.event.ClientEvents;
 import net.makozort.makosmisc.event.ModEvents;
 import net.makozort.makosmisc.networking.PayloadRegister;
-import net.makozort.makosmisc.reg.AllBlocks;
-import net.makozort.makosmisc.reg.AllEffectDataComponentTypes;
-import net.makozort.makosmisc.reg.AllEffects;
-import net.makozort.makosmisc.reg.AllItems;
+import net.makozort.makosmisc.reg.*;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -45,10 +42,11 @@ public class MakosMisc
         NeoForge.EVENT_BUS.register(new ModEvents());
 
         ModEnchantmentEffects.reg(modEventBus);
-
+        AllCreativeModeTabs.reg(modEventBus);
         AllEffectDataComponentTypes.register(modEventBus);
         AllBlocks.register(modEventBus);
         AllItems.register(modEventBus);
+        AllSounds.reg(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
