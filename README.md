@@ -1,6 +1,6 @@
 ![minecraft_title](https://github.com/user-attachments/assets/5c15bd38-c5cd-416d-9352-623baae86225)
 
-**Mako's Misc** is a Minecraft mod that brings a few unique and fun features to enhance your gameplay experience. Whether you’re looking for creative flight, hidden armor, or dashing capabilities
+**Mako's Misc** is a Minecraft mod that brings a few unique and fun features to enhance your gameplay experience. Whether you’re looking for creative flight, hidden armour, or dashing capabilities
 
 ## Features
 
